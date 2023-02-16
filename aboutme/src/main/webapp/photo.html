@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+    <style>
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 12%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        
+        .menu > li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a.active {
+            background-color: #555;
+            color: white;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <ul class ="menu">
+		<li><a  href="index.html">홈</a></li>
+		<li><a href="aboutme.html">자기소개</a></li>
+		<li><a class="active" href="photo.html">내 사진</a></li>
+		<li><a href="#">현재 시간</a></li>
+	</ul>
+	
+</body>
+</html>

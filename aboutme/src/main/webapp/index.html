@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+	<style>
+		html { overflow-y:scroll; }
+		.firstbutton > button {		
+			font-size: 23px;
+			padding:5px 70px;
+			border-radius: 5px;
+			background-color: #7fb3c8;
+			border:none;
+			color : white;
+			box-shadow: 0 5px 6px -1px rgba(0,0,0,0.6);
+			cursor:pointer;
+		}
+		
+		.secondbox > button {
+			cursor : pointer;
+			margin-left : 10px;
+			position : relative;
+			top : 80px;
+			font-size: 23px;
+			border-radius: 5px;
+			border:none;
+			background-color: #7fb3c8;
+			color : white;
+			box-shadow: 5px 0px 3px rgb(0 0 0 / 30%);
+			height: 100px;
+   	 		width: 115px;
+		}
+		div > h1 {
+			position: relative;
+			top : 50px;
+			text-align: center; 
+			line-height : 80px;
+		}
+		
+		div > h4 {
+			position: relative;
+			top : 70px;
+			text-align: center;
+			line-height : 0px; /* 두 글자 사이 공백 제거 */
+		}
+		
+		.footer {
+    		position: absolute;  
+    		bottom: 0px;
+ 	   		left: 42%;
+ 	   		width : 300px;
+		}	 
+
+		.menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 12%;
+			background-color: #f1f1f1;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			bottom: -0.5em;
+		  }
+		  
+		  .menu > li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		  }
+		  
+		  li a.active {
+			background-color: #555;
+			color: white;
+		  }
+		  
+		  li a:hover:not(.active) {
+			background-color: #555;
+			color: white;
+		  }
+
+		
+</style>
+
+</head>
+<body>
+ 	
+	<ul class ="menu">
+		<li><a class="active" href="index.html">홈</a></li>
+		<li><a href="aboutme.html">자기소개</a></li>
+		<li><a href="photo.html">내 사진</a></li>
+		<li><a href="#">현재 시간</a></li>
+	</ul>
+	
+	<div>
+		<h1 style="width: 500px; left: 37%;">웹프론트앤드개발자 입니다.</h1>
+		<h4>함께 개발하고 같이 성장하고 싶어요.</h4>	
+		<h4>경기도 하남시 망월동에 살고있어요 !</h4>
+	</div>
+	
+	<div class = "secondbox" style="display: flex; justify-content: center;">
+		<button onClick = "location.href = 'aboutme.html'">자기소개</button>
+		<button onClick = "location.href = 'photo.html'">내사진</button>
+	</div>	
+	
+	<p align = "middle" style = "position : relative; top : 90px;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.7014579662825!2d127.18198587368205!3d37.55623640071672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb147ffeecc9b%3A0x285c70d917e1c4c7!2z66-47IKs6rCV67OA7IS87Yq465-07ZKN6rK97LGE!5e0!3m2!1sko!2skr!4v1674718042198!5m2!1sko!2skr" width="950" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</p>
+	
+	 <footer class = "footer">
+        <p>📩wjdgus_3975@naver.com</p>
+        <div id = div1>
+        	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEX///8AvxgAvQDY9eJP2ISN4KIAvgQAwSPb+u7N9Nyq784AwR259NuW3JkAvhH8//9W0nIAwyslyUrz/vrB8tay5rhq25CG35276sLN9+VZ1X0AxDXr+/NHzmN725TB7s2B4qUgxj+h57Y0ylOx68Wq5LJ757KG5rK99d/i+e6n6b1m1oFr2YzJ89uY5bAzzV43xkNQ1Xlg0nJ9EnlhAAADxUlEQVR4nO3da1faQBCH8d1BA166GLFC5WaqvaACrd//w5WcQ6lo2GQWLTNz/s/7LPwOgTUx2TiHEEIIIYQQQgghhBBCqHHdq8/XR+LqD768k+/kJiOhDfujd/CNiYIXWiCa9PbzdftEh2bEo3y6F3As3OfLz/F2D2AhH7iKrpOFFyqAK+LXROCxEqAPWSsJ2MrE/oa+LrtLEmrZR8voPgHYUQT0oUgQTjQJPc35wlzNt7CMJmygqp10tZvyf2umyoRD9t/g35QJfYcrVDPdr+NP+hBKC0II5QchhPKDEEL5QQih/CCEUH4QQig/CCGUH4QQyg9CCOUH4X7CEL+CMLZp+pb/Uxja56eRbiMj0ffYlj8YxI8V5vGhIhfm0M/YhidihO34ULP2zss66NyE0D3sHMuKcPd+akbY27WfmhG6+x2j2RG6x+rhDAl7w8r91JDQXVWOZ0nonqoGNCXsFhX7qSmhm1fce2NLWHXVsTFhxX5qTFhx3bE14dtBzQnd8tWo9oStsP1VtCd0i+1hDQpf7acWhaOt+8UsCrdPaZgUbp3SsCkcvTilYVP48pSGUaG72YxtVdjb3PlnVfjvxjizws2pN7vCv4eKdoVuTtaF61NvloXuMrMunJd/gpsWuj5ZF7oisy7sUDAuXL2GdaFb2hBGFuOa2RB+irz24tSEMLYoR3Q1CzVCOua+uDphyvI4uoRh2DUu9PRoXZi2FpcqYThLWYZTk9DT0rrQp0wZuoSe+GsbKhOGgr1arDKhpyfrQk/c9XDVCQMx91N1Qk9j60JPC+tC5nK4CoU+KzhHGRqFvClDpZB1lKFTGPLmRxk6hZ4urAsZK6hrFQaaGRf67LLhlKFW2Hhpar1CT1fWhSFvdJShWNhwytAsbDZlqBYG32DKUC30dFc/ZegWeupbF3o6sS4Mw7opQ7uw/n9u6oWeHqwL66YMOcL46i27hXXPaRIj9P4sVvR9Rbc8YzzM54OFIVb6lpynFWElLAjlByGE8oMQQvlBCKH8IIRQfhBCKD8IIZQfhBDKD0II5QchhPLjCxfmhQNdwpB3uMLqNdTFFn5xga6bcf4De/DoN1sYezqMwGjAF041CUNg36C6qvp5DTLj359atuu5IgILWcrt/s6N1RCZ9zVu6nCu2Dlk9JwGLK+6UkGky5SfmTUxyw799uujprfgVBML6d/FQM/pn2BZ74kk76qB2jXXqDao9ZitkBJbva/8eL8PcN1ocHRXtKWVF8tJs9unmtXrSGu2z+8LQgghhBBCCCGEEEIIvekPP5Cn33NBThsAAAAASUVORK5CYII=" alt="에러" style = "width :23px; float : left">
+        	<p> https://blog.naver.com/wjdgus_3975</p>
+        </div>
+        
+        <div id = div1>
+        	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjCGcYwl04G5JUZtJ-1_1n2p3BTq6Ec9C0Q&usqp=CAU" alt="에러" style = "width :23px; float : left;">
+        	<p>https://github.com/JeongHyeonA</p>
+        </div>
+    </footer>
+	
+</body>
+</html>
